@@ -1,0 +1,80 @@
+@import url(https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css);
+@import url(https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Pro);
+
+.cursive{
+  font-family: Amatic SC , cursive;
+  font-weight: 700;
+}
+.prose img{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.navlink_NavBar_NotName{
+  position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 0;
+    font-family: Arial,sans-serif;
+}
+/* .my-social-icon .social-svg {
+  color: #BBC7CC;
+} */
+.my-social-icon .social-svg:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+   background: white;
+}
+.home-img::before{
+  content: "";
+  background-image: url('./assets/bg-image.jpg');
+  opacity: 0.7;
+  position: absolute;
+  top:0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: top center;
+  
+}
+.home-page-text-css{
+  position: relative;
+  text-align: center;
+ 
+  
+
+}
+
+
+.containerAboutMe {
+  position: relative;
+  color:white;
+  
+  /*Note, you can change the color to your choice depending on your 
+  image and what color blends with it*/
+}
+
+.containerAboutMe::after {
+  content: "";
+  opacity: 0.35;
+  background: url("./assets/BG.jpg") no-repeat fixed top;
+  background-blend-mode : overlay;
+  
+  /*background-blend-mode: luminosity;
+   also change the blend mode to what suits you, from darken, to other 
+  many options as you deem fit*/
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+  height: 520px;
+  
+}
+
